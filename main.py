@@ -52,4 +52,14 @@ x_vals = [0, 9]
 y_vals = [-(w1*x + b)/w2 for x in x_vals]
 
 plt.plot(x_vals, y_vals, color='red')
+
+# classify new data points
+unlabeled = [[3, 5], [5,8], [6,1], [0,3]]
+
+for point in unlabeled:
+    print(point, p.classify(point))
+    # plots the unlabeled data points for visual inspection 
+    plt.scatter(point[0], point[1], color='green', s=100, label='Unlabeled')
+
+# show graph
 plt.show()
