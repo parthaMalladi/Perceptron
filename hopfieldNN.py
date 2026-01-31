@@ -61,5 +61,5 @@ class HopfieldNN:
                 break
         
         # return the recalled memory
-        print(input)
+        return input
                 
